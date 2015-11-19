@@ -14,20 +14,80 @@
         "metadata": {
           "label": ""
         },
-        "properties": {
-          "name": "Speech",
-          "inputParams": [
-            {
-              "key": "message",
-              "type": "string",
-              "value": "hello"
-            }
-          ],
-          "outputParams": []
-        },
-        "children": [],
-        "id": "e8a52787-33b3-468e-998a-646c89d66a71",
-        "type": "action"
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Speech",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "hello"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "e8a52787-33b3-468e-998a-646c89d66a71",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
+            },
+            "children": [],
+            "id": "b5524045-7bc4-4f81-b6ea-be5704240102",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "",
+              "inputParams": [
+                {
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "type": "string",
+                  "value": ""
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "state",
+                  "type": "entityKnowledge",
+                  "value": "res"
+                }
+              ]
+            },
+            "children": [],
+            "id": "520d6856-0b2b-4a50-9fad-325c1266d3cf",
+            "type": "action"
+          }
+        ],
+        "id": "4c5b5756-ce08-4cc7-bddc-09d85ca61b5b",
+        "type": "sequence"
       }
     ],
     "id": "c39b1746-9ef6-4c78-bffe-116aa6458b94"
